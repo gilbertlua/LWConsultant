@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LWConsultantSQL", "LWConsul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LWConsultantSQL.Test", "LWConsultantSQL.Test\LWConsultantSQL.Test.csproj", "{074532BD-2B79-4202-91FE-A5BF6B1B4A0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LWController", "LWController\LWController.csproj", "{2B700C27-8B36-46FB-88D0-6765DE4E0E96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{074532BD-2B79-4202-91FE-A5BF6B1B4A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{074532BD-2B79-4202-91FE-A5BF6B1B4A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{074532BD-2B79-4202-91FE-A5BF6B1B4A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B700C27-8B36-46FB-88D0-6765DE4E0E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B700C27-8B36-46FB-88D0-6765DE4E0E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B700C27-8B36-46FB-88D0-6765DE4E0E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B700C27-8B36-46FB-88D0-6765DE4E0E96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
