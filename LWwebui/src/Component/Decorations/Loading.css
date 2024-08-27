@@ -1,0 +1,9 @@
+.loading-spinner{
+    color:  rgb(227, 132, 24);
+}
+.loading-text{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: .1s;
+}

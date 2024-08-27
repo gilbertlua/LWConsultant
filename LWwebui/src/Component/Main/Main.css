@@ -1,0 +1,49 @@
+.main-container{
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.child-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    height: 60px;
+    width: 70%;
+    border-radius: 15px;
+    padding: 0 30px;
+    font-size: 20px;
+}
+.search-btn{
+    background-color: rgb(227, 132, 24);
+    border:none;
+    border-radius: 15px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    padding: 0 30px;
+}
+.search-btn:hover{
+    background-color:  rgb(191, 109, 16);;
+}
+.title-bar{
+    margin-bottom: 30px;
+}
+.title-header{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.first-text{
+    color:rgb(227, 132, 24);
+    text-decoration: underline;
+}
+.loading-bar{
+    margin-top: 30px;
+}
+.how-to{
+    margin-top: 10px;
+    color: black;
+}
