@@ -25,6 +25,12 @@ namespace LWConsultantSQL.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Pasal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UrlPDF")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("ItemId");
 
                     b.ToTable("Items");
@@ -52,7 +58,7 @@ namespace LWConsultantSQL.Migrations
             modelBuilder.Entity("LWConsultantSQL.Keyword", b =>
                 {
                     b.HasOne("LWConsultantSQL.Item", null)
-                        .WithMany("Keyword")
+                        .WithMany("Keywords")
                         .HasForeignKey("ItemId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -60,7 +66,7 @@ namespace LWConsultantSQL.Migrations
 
             modelBuilder.Entity("LWConsultantSQL.Item", b =>
                 {
-                    b.Navigation("Keyword");
+                    b.Navigation("Keywords");
                 });
 #pragma warning restore 612, 618
         }

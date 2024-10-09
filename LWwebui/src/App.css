@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.keyadder{
+  display: flex;
+  flex-direction: row;
+}
+.keyadder input{
+  margin-right: 15px;
+}

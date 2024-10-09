@@ -10,11 +10,10 @@ public class LWConsultantContext:DbContext
     public string DbPath { get; }
     public LWConsultantContext()
     {
-        var folder = Environment.SpecialFolder.LocalApplicationData;
-        var path = Environment.GetFolderPath(folder);
-        DbPath = Path.Join(path, "lwconsultants.db");
+        DbPath = "lwconsultants.db";
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlite($"Data Source={DbPath}");
+    protected override void OnConfiguring(DbContextOptionsBuilder options){
+        options.UseSqlite($"Data Source={DbPath}");
+    }        
 }

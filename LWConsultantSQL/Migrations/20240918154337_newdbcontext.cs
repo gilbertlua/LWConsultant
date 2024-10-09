@@ -5,7 +5,7 @@
 namespace LWConsultantSQL.Migrations
 {
     /// <inheritdoc />
-    public partial class DBLconsultant : Migration
+    public partial class newdbcontext : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,7 +16,9 @@ namespace LWConsultantSQL.Migrations
                 {
                     ItemId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Description = table.Column<string>(type: "TEXT", nullable: true)
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
+                    Pasal = table.Column<string>(type: "TEXT", nullable: true),
+                    UrlPDF = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

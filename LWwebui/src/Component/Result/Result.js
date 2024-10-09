@@ -1,6 +1,6 @@
 import './Result.css'
 import { CustomModal } from './Modal'
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 
 export const Result = ({results,loading}) =>{    
     const [modalShow, setModalShow] = useState(false)
@@ -25,9 +25,7 @@ export const Result = ({results,loading}) =>{
                     <tr key={index}>
                         <td className='result-td'>hasil</td>
                         <td className='result-td'>
-                            {item.description.length > 10
-                            ? item.description.substring(0, 100) + '...'
-                            : item.description}
+                            {item.description}
                         </td>
                         <td className='result-td'>{item.pasal}</td>
                         <td className='result-td'><button onClick={()=>handleButtonDetail(item)} className="details-btn">Detail</button></td>
